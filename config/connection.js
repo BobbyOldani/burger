@@ -3,12 +3,13 @@ const mysql = require("mysql");
 
 
 const connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: process.env.SQL_PASSWORD,
-  database: "burgers_db"
+  host: process.env.JAWS_HOST,
+  port: process.env.JAWS_PORT,
+  user: process.env.JAWS_USERNAME,
+  password:process.env.JAWS_PASSWORD,
+  database: process.env.JAWS_DATABASE
 });
+
 
 // Make connection.
 connection.connect(function(err) {
