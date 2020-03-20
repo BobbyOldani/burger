@@ -6,11 +6,10 @@ const connection ;
     connection = mysql.createConnection(process.env.JAWSDB_URL);
   } else {
     connection = mysql.createConnection({
-  host: process.env.JAWS_HOST,
-  port: process.env.JAWS_PORT,
-  user: process.env.JAWS_USERNAME,
-  password:process.env.JAWS_PASSWORD,
-  database: process.env.JAWS_DATABASE
+  host: "localhost",
+  user: "root",
+  password:"",
+  database: "burgers_db"
 });
 }
 
