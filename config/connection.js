@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
   port: process.env.JAWS_PORT,
   user: process.env.JAWS_USERNAME,
   password:process.env.JAWS_PASSWORD,
-  database: process.env.JAWS_DATABASE
+  database: "burgers_db"
 });
 
 
