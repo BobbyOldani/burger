@@ -8,7 +8,8 @@ const connection ;
     connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password:"",
+  port: "3306",
+  password: process.env.SQL_PASS,
   database: "burgers_db"
 });
 }
